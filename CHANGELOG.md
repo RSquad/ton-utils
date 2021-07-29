@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/RSquad/ton-utils/compare/v1.1.0...v1.2.0) (2021-07-29)
+
+
+### Features
+
+* add NETWORK_MAP constant export ([a570731](https://github.com/RSquad/ton-utils/commit/a570731f8dd3834698ddb5fb0e38eea086f0c588))
+
 ## [1.1.0](https://github.com/RSquad/ton-utils/compare/v1.0.0...v1.1.0) (2021-07-29)
 
 
