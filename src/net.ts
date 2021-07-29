@@ -83,3 +83,23 @@ export const callThroughMultisig = async ({
     "now aborted"
   );
 };
+
+export const sendThroughMultisig = async ({
+  smcSafeMultisigWallet,
+  dest,
+  value,
+}: {
+  smcSafeMultisigWallet: TonContract;
+  dest: string;
+  value: number;
+}) =>
+  await smcSafeMultisigWallet.call({
+    functionName: "sendTransaction",
+    input: {
+      dest,
+      value,
+      bounce: false,
+      flags: 2,
+      payload: "",
+    },
+  });
