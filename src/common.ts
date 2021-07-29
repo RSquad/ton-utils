@@ -29,3 +29,8 @@ export const logGetter = async (
 export const sleep = (ms) => {
   return new Promise((resolve) => setTimeout(resolve, ms));
 };
+
+export const genRandomHex = (size) =>
+  [...Array(size)]
+    .map(() => Math.floor(Math.random() * 16).toString(16))
+    .join("");
