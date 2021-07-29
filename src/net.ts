@@ -1,5 +1,5 @@
-import { Abi, TonClient } from "@tonclient/core";
-import TonContract from "./ton-contract";
+import { TonClient } from "@tonclient/core";
+import { TonContract } from "./ton-contract";
 
 export const waitForTransaction = async (
   client: TonClient,
