@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/RSquad/ton-utils/compare/v1.2.0...v1.3.0) (2021-09-13)
+
+
+### Features
+
+* add addr check util ([52181d0](https://github.com/RSquad/ton-utils/commit/52181d0efeb61e9a443557fc592ab6a962d9f904))
+* add random multisig deploy util  ([cc115d0](https://github.com/RSquad/ton-utils/commit/cc115d0690911788bacc15bed72db755315f1d60))
+* change multisig waitings to messages ([103fd48](https://github.com/RSquad/ton-utils/commit/103fd4869105a7f208cb56a0967785e662927e10))
+
 ## [1.2.0](https://github.com/RSquad/ton-utils/compare/v1.1.0...v1.2.0) (2021-07-29)
 
 
