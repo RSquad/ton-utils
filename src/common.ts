@@ -1,3 +1,4 @@
+import { TonClient } from "@tonclient/core";
 import { TonContract } from "./ton-contract";
 
 export const logPubGetter = async (
