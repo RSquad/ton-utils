@@ -102,3 +102,27 @@ export const sendThroughMultisig = async ({
       payload: "",
     },
   });
+
+export const deployRandomMultisig = async (
+  client: TonClient,
+  smcSafeMultisigWallet: TonContract
+) => {
+  const smcRandomMultisig = new TonContract({
+    client,
+    name: "randomMultisig",
+    tonPackage: smcSafeMultisigWallet.tonPackage,
+    keys: await client.crypto.generate_random_sign_keys(),
+  });
+
+  await smcRandomMultisig.calcAddress();
+
+  await sendThroughMultisig({
+    smcSafeMultisigWallet,
+    dest: smcRandomMultisig.address,
+    value: 1_000_000_000,
+  });
+
+  await smcRandomMultisig.deploy();
+
+  return { smcRandomMultisig };
+};
