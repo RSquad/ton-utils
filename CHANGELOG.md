@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.1](https://github.com/RSquad/ton-utils/compare/v1.3.0...v1.3.1) (2021-09-13)
+
+
+### Bug Fixes
+
+* fixed message waiters ([1615178](https://github.com/RSquad/ton-utils/commit/161517810dcebcb9de3c3b0f993716162b1900a1))
+
 ## [1.3.0](https://github.com/RSquad/ton-utils/compare/v1.2.0...v1.3.0) (2021-09-13)
 
 
