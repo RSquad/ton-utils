@@ -63,22 +63,21 @@ export const callThroughMultisig = async ({
       input,
     },
   });
-  const { transaction } = await smcSafeMultisigWallet.call({
+  await smcSafeMultisigWallet.call({
     functionName: "sendTransaction",
     input: {
       dest,
       value,
-      flags: 3,
+      flags: 1,
       bounce: true,
       payload: body,
     },
   });
-  await waitForTransaction(
+  await waitForMessage(
     client,
     {
-      account_addr: { eq: dest },
-      now: { ge: transaction.now },
-      aborted: { eq: false },
+      src: { eq: smcSafeMultisigWallet.address },
+      dst: { eq: dest },
     },
     "now aborted"
   );
@@ -99,7 +98,7 @@ export const sendThroughMultisig = async ({
       dest,
       value,
       bounce: false,
-      flags: 2,
+      flags: 1,
       payload: "",
     },
   });
