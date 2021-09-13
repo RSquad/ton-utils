@@ -79,7 +79,7 @@ export const callThroughMultisig = async ({
       src: { eq: smcSafeMultisigWallet.address },
       dst: { eq: dest },
     },
-    "now aborted"
+    "id"
   );
 };
 
